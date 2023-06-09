@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_tree_inherit_birthday" model="ir.ui.view">
+        <field name="name">hr.employee.tree.birthday</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="birthday" string="Birthday" widget="birthdayinfo"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_kanban_view_employees_inherit_birthday" model="ir.ui.view">
+        <field name="name">hr.employee.kanban.inherit.birthday</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+        <field name="arch" type="xml">
+            <xpath expr="//li[@id='last_login']" position="inside">
+                <field name="birthday" string="Birthday" widget="birthdayinfo"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
