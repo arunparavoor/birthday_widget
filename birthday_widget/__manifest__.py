@@ -2,6 +2,7 @@
     'name': 'Birthday info for all employees List and Kanban view',
     'summary': """Birthday info for all employees in List and Kanban view.""",
     'version': '15.0',
+    'license': "LGPL-3",
     'description': """Birthday info for all employees in List and Kanban view.""",
     'author': 'Arun Reghu Kumar',
     'company': 'Tech4Logic',
